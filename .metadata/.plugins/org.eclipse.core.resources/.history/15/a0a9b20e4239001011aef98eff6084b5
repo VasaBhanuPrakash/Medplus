@@ -1,0 +1,236 @@
+package com.example;
+import java.util.*;
+public class NumToString {
+	public static void main(String arg[]) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		String s="";
+		String s1;
+		int x=0;
+		ArrayList<String> l1=new ArrayList<>();
+		while(n!=0) {
+			if((x==0)||(x==3)||(x==5)) {
+				if((x==3)&&((n%100)!=0)) {
+					s="thousand"+s;
+				}
+				else if((x==3)&&((n%100)!=0)) {
+					s="lakh"+s;
+				}
+				if((n%100)>0) {
+					continue;
+				}
+				else if(((n%100)<20)) {
+					switch(n%100) {
+						case 1:{
+							s="one"+s;
+							break;
+						}
+						case 2:{
+							s+="two"+s;
+							break;
+						}
+						case 3:{
+							s="three"+s;
+							break;
+						}
+						case 4:{
+							s="four"+s;
+							break;
+						}
+						case 5:{
+							s="five"+s;
+							break;
+						}
+						case 6:{
+							s="six"+s;
+							break;
+						}
+						case 7:{
+							s="seven"+s;
+							break;
+						}
+						case 8:{
+							s="eight"+s;
+							break;
+						}
+						case 9:{
+							s="nine"+s;
+							break;
+						}
+						case 10:{
+							s="nine"+s;
+							break;
+						}
+						case 11:{
+							s="nine"+s;
+							break;
+						}
+						case 12:{
+							s="nine"+s;
+							break;
+						}
+						case 13:{
+							s="nine"+s;
+							break;
+						}
+						case 14:{
+							s="nine"+s;
+							break;
+						}
+						case 15:{
+							s="nine"+s;
+							break;
+						}
+						case 16:{
+							s="nine"+s;
+							break;
+						}
+						case 17:{
+							s="nine"+s;
+							break;
+						}
+						case 18:{
+							s="nine"+s;
+							break;
+						}
+						case 19:{
+							s="nine"+s;
+							break;
+						}
+						default:break;
+					}
+					x+=2;
+					n/=100;
+				}
+				else {
+					switch(n%10) {
+						case 1:{
+							s="one"+s;
+							break;
+						}
+						case 2:{
+							s+="two"+s;
+							break;
+						}
+						case 3:{
+							s="three"+s;
+							break;
+						}
+						case 4:{
+							s="four"+s;
+							break;
+						}
+						case 5:{
+							s="five"+s;
+							break;
+						}
+						case 6:{
+							s="six"+s;
+							break;
+						}
+						case 7:{
+							s="seven"+s;
+							break;
+						}
+						case 8:{
+							s="eight"+s;
+							break;
+						}
+						case 9:{
+							s="nine"+s;
+							break;
+						}
+						default:break;
+					}
+					x+=1;
+					n/=10;
+				}
+			}
+			else if((x==1)||(x==4)||(x==6)) {
+				switch(n%10) {
+					case 2:{
+						s+="twenty"+s;
+						break;
+					}
+					case 3:{
+						s="thirty"+s;
+						break;
+					}
+					case 4:{
+						s="forty"+s;
+						break;
+					}
+					case 5:{
+						s="fifty"+s;
+						break;
+					}
+					case 6:{
+						s="sixty"+s;
+						break;
+					}
+					case 7:{
+						s="seventy"+s;
+						break;
+					}
+					case 8:{
+						s="eighty"+s;
+						break;
+					}
+					case 9:{
+						s="ninty"+s;
+						break;
+					}
+					default:break;
+				}
+			}
+			else {
+				if((n%10)>0) {
+					s="hundred"+s;
+					switch(n%10) {
+						case 1:{
+							s="one"+s;
+							break;
+						}
+						case 2:{
+							s+="two"+s;
+							break;
+						}
+						case 3:{
+							s="three"+s;
+							break;
+						}
+						case 4:{
+							s="four"+s;
+							break;
+						}
+						case 5:{
+							s="five"+s;
+							break;
+						}
+						case 6:{
+							s="six"+s;
+							break;
+						}
+						case 7:{
+							s="seven"+s;
+							break;
+						}
+						case 8:{
+							s="eight"+s;
+							break;
+						}
+						case 9:{
+							s="nine"+s;
+							break;
+						}
+						default:break;
+					}
+					x+=1;
+					n/=10;
+				}
+			}
+			System.out.println(s);
+		}
+		sc.close();
+	}
+}
