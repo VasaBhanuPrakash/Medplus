@@ -1,0 +1,8 @@
+package com.example;
+
+public interface MembershipPlan {
+	private Plan plan;
+	private String duration;
+	private double fee;
+	public void MembershipPlan(Plan plan,String duration,double fee);
+}

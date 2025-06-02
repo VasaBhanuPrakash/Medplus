@@ -1,0 +1,22 @@
+package com.example;
+
+import java.util.List;
+
+public class Member extends Person{
+	private MembershipPlan mPlan;
+	public Member(String GymId, String name, int age, HealthCondition healthCondition, int experience,
+			List<String> foodHabit, List<String> goals,String timings, Plan plan,int duration, double fee) {
+		super(GymId, name, age, healthCondition, experience, foodHabit, goals,timings);
+		this.mPlan=new MembershipPlan(plan, duration, fee);
+	}
+	public MembershipPlan getMembershipPlan() {
+		return this.mPlan;
+	}
+	public void setMembershipPlan(MembershipPlan mPlan) {
+		this.mPlan=mPlan;
+	}
+	@Override
+	public void display() {
+		System.out.println("Gym ID : "+getGymId()+"\nName : "+getName()+"\nAge : "+getAge()+"\nHealth Condition : "+getHealthCondition()+"\nExperience : "+getExperience()+"\nFood Habit : "+getFoodHabits()+"\nGoals : "+getGoals()+"\nPlan : "+mPlan.getPlan()+"\nDuration : "+mPlan.getDuration()+" months\nTimings"+getTimings()+"\nFee : "+mPlan.getFee());
+	}
+}

@@ -1,0 +1,7 @@
+package com.example;
+
+import java.util.List;
+
+public abstract class Person{
+	public abstract void person(String GymId,String name,int age,HealthCondition healthCondition,int experience,List<String> foodHabit,List<String> goals);
+}

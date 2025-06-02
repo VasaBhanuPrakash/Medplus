@@ -1,0 +1,10 @@
+package com.example;
+
+import java.util.*;
+
+public class Gym{
+	public Gym() {
+		HashMap<String,Member> s=new Hashmap<>();
+		
+	}
+}

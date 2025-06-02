@@ -1,0 +1,5 @@
+package com.example;
+
+public enum Duration {
+	5:00AM-7:30AM
+}

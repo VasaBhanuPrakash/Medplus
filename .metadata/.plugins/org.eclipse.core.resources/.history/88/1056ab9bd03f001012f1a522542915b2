@@ -1,0 +1,30 @@
+package com.example;
+
+import java.util.*;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		do {
+			System.out.println("1.Add new Gym member\n2.Assign plan to the existing member\n3.View All registered members\n4.Exit\n");
+			System.out.println("Enter the choice : ");
+			switch(sc.nextInt()) {
+			case 1->{
+				System.out.println("Enter the Gym ID :");
+				String gymId=sc.nextLine();
+				System.out.println("Enter name :");
+				String name=sc.nextLine();
+				System.out.println("Enter age :");
+				int age=sc.nextInt();
+				System.out.println("Health Condition");
+				System.out.println("1.Perfectly Alright\n2.Allowed By Doctor\n,Not Suitable\n");
+				HealthCondition[] h=HealthCondition.values();
+				HealthCondition healthCondition = h[sc.nextInt()-1];
+				System.out.println("Enter the experience in Gym :");
+				int experience=sc.nextInt();
+				List<String> foodHabits=new ArrayList<>();
+			}
+			}
+		}
+	}
+}

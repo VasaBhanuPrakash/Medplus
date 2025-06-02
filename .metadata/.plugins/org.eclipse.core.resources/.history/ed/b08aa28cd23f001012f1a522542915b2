@@ -1,0 +1,17 @@
+package com.example;
+
+import java.util.List;
+
+public class Gym extends Member{
+	private Trainer trainee;
+	Trainer[] t=Trainer.values();
+	public Gym(String GymId, String name, int age, HealthCondition healthCondition, int experience,
+			List<String> foodHabit, List<String> goals, Plan plan, String duration, double fee) {
+		super(GymId, name, age, healthCondition, experience, foodHabits, goals, timings, plan, duration, fee);
+		int i=0;
+		while(i<10) {
+			Trainee t1 = new Trainee(trainee, );
+			if()
+		}
+	}
+}

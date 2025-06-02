@@ -1,0 +1,30 @@
+package com.example;
+
+public class MembershipPlan {
+	private Plan plan;
+	private String timings;
+	private double fee;
+	public MembershipPlan(Plan plan,String timings,double fee) {
+		this.plan=plan;
+		this.timings=timings;
+		this.fee=fee;
+	}
+	public Plan getPlan() {
+		return this.plan;
+	}
+	public void setPlan(Plan plan) {
+		this.plan=plan;
+	}
+	public String getTimings() {
+		return this.timings;
+	}
+	public void setTimings(String timings) {
+		this.timings=timings;
+	}
+	public double getFee() {
+		return fee;
+	}
+	public void setFee(double fee) {
+		this.fee=fee;
+	}
+}

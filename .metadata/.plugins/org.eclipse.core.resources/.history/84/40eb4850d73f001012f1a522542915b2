@@ -1,0 +1,21 @@
+package com.example;
+
+import java.util.*;
+
+public class Gym{
+	HashMap<String,Member> s=new HashMap<>();
+	public Gym(HashMap<String, Member> x) {
+		this.s=s;
+	}
+	public HashMap<String, Member> getGym() {
+		return s;
+	}
+	public void setGym(String id,Member x) {
+		s.put(id, x);
+	}
+	public void display() {
+		for(String i:s.keySet()) {
+			Member m=s.get(i);
+		}
+	}
+}

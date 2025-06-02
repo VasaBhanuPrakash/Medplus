@@ -1,0 +1,17 @@
+package com.example;
+
+import java.util.List;
+
+public class Member extends Person{
+	private Plan plan;
+	private String duration;
+	private double fee;
+	public Member(String GymId, String name, int age, HealthCondition healthCondition, int experience,
+			List<String> foodHabit, List<String> goals, Plan plan, String duration, double fee) {
+		super(GymId, name, age, healthCondition, experience, foodHabit, goals, plan, duration, fee);
+	}
+	@Override
+	public void display() {
+		System.out.println("Gym ID : "+getGymId()+"\nName : "+getName()+"\nAge : "+getAge()+"\nHealth Condition : "+getHealthCondition()+"\nExperience : "+getExperience()+"\nFood Habit"+getFoodHabits()+"\nGoals : "+getGoals()+"\nPlan : "+getPlan()+"\nDuration : "+getDuration()+"\nFee : "+getFee());
+	}
+}

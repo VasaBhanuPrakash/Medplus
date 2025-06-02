@@ -1,0 +1,37 @@
+package com.example;
+
+import java.util.List;
+
+public class Member extends Person implements MembershipPlan{
+	private Plan plan;
+	private String duration;
+	private double fee;
+	public Member(String GymId, String name, int age, HealthCondition healthCondition, int experience,
+			List<String> foodHabit, List<String> goals, Plan plan, String duration, double fee) {
+		super(GymId, name, age, healthCondition, experience, foodHabit, goals);
+		this.plan=plan;
+		this.duration=duration;
+		this.fee=fee;
+		
+		public void setPlan(Plan plan) {
+			this.plan=plan;
+		}
+		public String getDuration() {
+			return this.duration;
+		}
+		public void setDuration() {
+			this.duration=duration;
+		}
+		public double getFee() {
+			return fee;
+		}
+		public void setFee(double fee) {
+			this.fee=fee;
+		}
+	}
+	@Override
+	public void display() {
+		System.out.println("Gym ID : "+getGymId()+"\nName : "+getName()+"\nAge : "+getAge()+"\nHealth Condition : "+getHealthCondition()+"\nExperience : "+getExperience()+"\nFood Habit"+getFoodHabits()+"\nGoals : "+getGoals());
+	}
+	
+}
